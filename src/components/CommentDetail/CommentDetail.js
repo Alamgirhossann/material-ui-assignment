@@ -17,7 +17,9 @@ const CommentDetail = () => {
         <div>
             <h1 style={{ textAlign: 'center' }}>Here is the comments from the following users</h1>
             {
-                commentDetail.map(AllComnt => <AllComments AllComments={AllComnt}></AllComments>)
+                commentDetail.map(AllComnt => <AllComments 
+                    key={AllComnt.id}
+                    AllComments={AllComnt}></AllComments>)
             }
         </div>
     );

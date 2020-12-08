@@ -14,7 +14,9 @@ const Comments = () => {
     return (
         <div>
             {
-                comment.map(comment => <CommentDetail comment={comment}></CommentDetail>)
+                comment.map(comment => <CommentDetail 
+                    key ={comment.id}
+                    comment={comment}></CommentDetail>)
             }
 
         </div>
